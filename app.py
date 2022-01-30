@@ -1,6 +1,8 @@
 from flask import Flask, request
 from flask_restful import Resource, Api
 from flask_cors import CORS
+#git https://github.com/ymh3103/flask-rest-api.git
+
 
 #Inisiasi Object Flask
 
@@ -31,7 +33,7 @@ class Resources(Resource):
         friends["email"] = email
         friends["address"] = address
         response = {"messages" : "api using flask"}
-        return friends
+        return response
 
 #Set Up Resource
 api.add_resource(Resources, "/api", methods=["GET", "POST"])
