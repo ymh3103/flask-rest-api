@@ -31,7 +31,7 @@ class Resources(Resource):
         friends["email"] = email
         friends["address"] = address
         response = {"messages" : "api using flask"}
-        return response
+        return friends
 
 #Set Up Resource
 api.add_resource(Resources, "/api", methods=["GET", "POST"])
